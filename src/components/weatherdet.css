@@ -1,0 +1,185 @@
+.weather-det{
+    height: 80vh;
+    /* background-color:white; */
+    width:60%;
+    /* border: 1px white solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    padding: 40px;
+    border-radius: 10px;
+
+}
+.left, .right{
+    width: 50%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.search{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+    gap:10px;
+}
+.search img{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    padding:10px;
+    background-color: #ebfffc;
+    cursor: pointer;
+}
+.search input{
+    background-color: #ebfffc;
+    color:gray;
+    border-radius: 40px;
+    width:90%;
+    height: 35px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}
+.weather-info{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature{
+ /* The `line-height: 1;` property in CSS sets the height of each line of text within an element to be
+ exactly 1 times the font size of the text. This means that the space between lines of text will be
+ equal to the font size of the text itself. It can be used to adjust the spacing between lines of
+ text to improve readability or achieve a specific design layout. */
+    line-height: 1;
+
+}
+.weather-image{
+    width:150px;
+    margin: 10px 0;
+}
+.temperature{
+    font-size: 5vw;
+    color: #fff;
+
+}
+.location{
+    font-size: 2vw;
+    color: #fff;
+}
+.humidity, .windSpeed{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap:10px;
+   margin-bottom: 20px;
+
+   
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 100%;
+    /* padding: 20px; */
+    justify-content: space-around;
+    padding-left: 60px;
+    
+
+}
+.humidity h1, .windSpeed h1{
+    font-size: 3vw;
+   
+    
+}
+.humidity h2, .windSpeed h2{
+    font-size: 2vw;
+    
+}
+.humidity span, .windSpeed span{
+    display: flex;
+    width:70%;
+    flex-direction: column;
+   
+    /* align-items: center; */
+    justify-content: center;
+}
+.description{
+    margin-bottom:10px;
+    
+}
+.search img:hover{
+    transform: scale(1.1);
+    /* background-color:; */
+}
+
+.right img{
+    width:40px;
+}
+.right h1, .right h2{
+    color: rgb(209, 205, 205);
+}
+.message{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+@media screen and (max-width:800px) {
+    .weather-det{
+        width:280px;
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        padding: 20px 15px;
+        
+    }
+    .left,.right{
+        width:100%;
+        /* padding: 0; */
+    }
+    .search{
+        gap:5px;
+    }
+    .temperature{
+        font-size: 50px;
+
+    }
+    .location{
+        font-size: 30px;
+    }
+    .humidity, .windSpeed{
+       width: 100%;
+       margin-bottom: 40px;
+       /* gap:15px; */
+
+    }
+    .humidity h1, .windSpeed h1{
+        font-size: 30px;
+    }
+    .humidity h2, .windSpeed h2{
+        font-size: 15px;
+    }
+    .right{
+        margin-top: 30px;
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .description{
+        place-self: center;
+        margin-left: -60px;
+    }
+}
