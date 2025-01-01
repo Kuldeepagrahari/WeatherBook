@@ -79,7 +79,7 @@ const WeatherDetails = () => {
     <div className='weather-det'>
       <div className="left">
         <div className="search">
-            <input type="text" placeholder='Search' className='input' ref={searchRef}/>
+            <input type="text" placeholder='Enter Your City' className='input' ref={searchRef}/>
             <img src = {searchIcon} alt="search" onClick={()=>{
                 searcher(searchRef.current.value)
             }}/>
