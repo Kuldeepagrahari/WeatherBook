@@ -92,7 +92,7 @@ const WeatherDetails = () => {
       </div>
       <div className="right">
         <div className="description">
-            <h2 style={{backgroundColor:"black",color:"white",borderRadius:"10px",padding:"20px 20px",marginBottom:"15px",fontWeight:"600",boxShadow:"2px 2px 10px black"}}>
+            <h2 className="desc" style={{color:"white",borderRadius:"10px",padding:"20px 20px",marginBottom:"15px",fontWeight:"600"}}>
                 {weatherData.description || "All Clear Sam"}
             </h2>
         </div>

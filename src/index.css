@@ -10,6 +10,7 @@
 }
 
 .app{
+  background-image: linear-gradient(135deg, black, #038d82);
   background-color:black;
   min-height: 100vh;
   display: flex;
@@ -19,7 +20,7 @@
   /* background-image: linear-gradient(0deg, violet, indigo, blue, green, yellow, orange, red ); */
 }
 #app-head{
-  font-size: 4vw;
+  font-size: 5vw;
  
   padding: 10px 20px;
   border-radius: 20px;
