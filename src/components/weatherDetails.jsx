@@ -7,6 +7,7 @@ import drizzle from "../assets/drizzle.png"
 import humidity from "../assets/humidity.png"
 import rain from "../assets/rain.png"
 import snow from "../assets/snow.png"
+
 import wind from "../assets/wind.png"
 
 
@@ -21,7 +22,7 @@ const WeatherDetails = () => {
         "01n":clear,
         "02d":cloud,
         "02n":cloud,
-        "03n":cloud,
+        "03d":cloud,
         "03n":cloud,
         "04d":drizzle,
         "04n":drizzle,
@@ -91,7 +92,7 @@ const WeatherDetails = () => {
       </div>
       <div className="right">
         <div className="description">
-            <h2 style={{backgroundColor:"black",color:"white",borderRadius:"10px",padding:"20px 20px",marginBottom:"15px",fontWeight:"600"}}>
+            <h2 style={{backgroundColor:"black",color:"white",borderRadius:"10px",padding:"20px 20px",marginBottom:"15px",fontWeight:"600",boxShadow:"2px 2px 10px black"}}>
                 {weatherData.description || "All Clear Sam"}
             </h2>
         </div>

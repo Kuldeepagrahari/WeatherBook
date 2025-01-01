@@ -38,7 +38,7 @@
 }
 .search input{
     background-color: #ebfffc;
-    color:gray;
+    color:rgb(48, 47, 47);
     border-radius: 40px;
     width:90%;
     height: 35px;
@@ -114,6 +114,7 @@
 }
 .description{
     margin-bottom:10px;
+    /* box-shadow: 2px 2px 10px black; */
     
 }
 .search img:hover{
@@ -131,17 +132,33 @@
     background-color: black;
     border-radius: 10px;
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 @media screen and (max-width:800px) {
     .weather-det{
-        width:280px;
+        width:350px;
         display: flex;
         flex-direction: column;
-        height: 150vh;
-        padding: 20px 15px;
+        height: 130vh;
+        padding: 0px 15px;
         
+    }
+    .search input{
+        height: 50px;
+        width:75%;
+        font-size: 20px;
+    }
+    .search img{
+        height: 50px;
+        width: 50px;
+        
+    }
+    .search{
+        gap: 20px;
     }
     .left,.right{
         width:100%;
@@ -151,8 +168,14 @@
         gap:5px;
     }
     .temperature{
-        font-size: 50px;
+        font-size: 75px;
 
+    }
+    .left{
+        height: 45%;
+    }
+    .right{
+        height: 60%;
     }
     .location{
         font-size: 30px;
@@ -163,15 +186,16 @@
        /* gap:15px; */
 
     }
+    .right{
+        margin-top: 0px;
+    }
     .humidity h1, .windSpeed h1{
         font-size: 30px;
     }
     .humidity h2, .windSpeed h2{
         font-size: 15px;
     }
-    .right{
-        margin-top: 30px;
-    }
+  
     .right{
         display: flex;
         align-items: center;
@@ -180,6 +204,9 @@
     }
     .description{
         place-self: center;
+        margin-left: -60px;
+    }
+    .message{
         margin-left: -60px;
     }
 }
